@@ -2,6 +2,7 @@ import { HomeContainer } from '@/components/content';
 import { LoginButton } from '@/components/inputs/button';
 import { PasswordInput } from '@/components/inputs/input';
 import { logIn } from '@/lib/actions';
+import Link from 'next/link';
 import React from 'react';
 
 export default function Login({
@@ -35,7 +36,7 @@ export default function Login({
               </label>
               <PasswordInput />
             </div>
-            <button className='text-xs text-gray-300'>Forgot password?</button>
+            <Link href='/account/password/recover' className='text-xs text-gray-300'>Forgot password?</Link>
             <div className='mt-6'>
               <LoginButton />
             </div>
