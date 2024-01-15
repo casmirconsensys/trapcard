@@ -6,12 +6,13 @@ import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
 export async function updatePassword(formData: FormData) {
-    // const email = formData.get('email') as string;
+    const email = formData.get('email') as string;
     const password = formData.get('password') as string;
     const cookieStore = cookies();
     const supabase = createClient(cookieStore);
 
     const { data, error } = await supabase.auth.updateUser({
+        email,
         password,
     })
 
