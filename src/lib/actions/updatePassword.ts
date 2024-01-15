@@ -6,18 +6,13 @@ import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
 export async function updatePassword(formData: FormData) {
-    const email = formData.get('email') as string;
+    // const email = formData.get('email') as string;
     const password = formData.get('password') as string;
     const cookieStore = cookies();
     const supabase = createClient(cookieStore);
 
     const { data, error } = await supabase.auth.updateUser({
-        email,
         password,
-        // data: {
-        //     successMsg: 'Password updated successfully',
-        //     errorMsg: 'Sorry please try again!!'
-        // }
     })
 
     if (error) {
@@ -30,7 +25,7 @@ export async function updatePassword(formData: FormData) {
         );
     }
 
-    if (data.user && data.user.id) {
+    if (data) {
         return redirect('/account/login');
     }
 }
