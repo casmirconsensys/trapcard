@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lightHeroBg {
+  background-image: url('/images/home/base_l.jpg');
+}
+
+.darkHeroBg {
+  background-image: url('/images/home/base_d.jpg');
+}
+
+.lightPrivacyBg {
+  background-image: url('/images/playlist/base_l.jpg');
+}
+
+.blueToPurple {
+  color: white;
+  background-image: linear-gradient(116deg, #00bbff, #9c42f5 53%, #5d2de1 100%);
+}
+
+.greenToPurple {
+  color: white;
+  background-image: linear-gradient(116deg, #00ffaa, #4579f5 53%, #9c42f5 100%);
+}
+
+.orangeToPink {
+  color: white;
+  background-image: linear-gradient(103deg, #ff5e00, #f54562 54%, #c32de1);
+}
+
+.bgCta {
+  background: linear-gradient(rgba(8, 36, 57, 0.6) 70%, rgb(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.sectionClip {
+  clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.textGradient {
+  background: -webkit-linear-gradient(295deg, #00ffaa,
+      #4579f5 53%,
+      #9c42f5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.container--waitlistapi {
+  margin: 0 24px 0 0 !important;
+  padding: 24px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 8px 8px -4px rgba(69, 121, 245, 0.12),
+    0 16px 24px 0 rgba(69, 121, 245, 0.24),
+    0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 0 1px 0 rgba(69, 121, 245, 0.24);
+  background-image: linear-gradient(116deg, #00ffaa, #4579f5 53%, #9c42f5 100%);
+}
+
+.bgAnimation {
+  background: linear-gradient(141deg, #00ffaa, #4579f5, #9c42f5, #ff5e00);
+  background-size: 600% 600%;
+
+  -webkit-animation: GradientAnimation 24s ease infinite;
+  -moz-animation: GradientAnimation 24s ease infinite;
+  animation: GradientAnimation 24s ease infinite;
+}
+
+
+
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 23% 0%
+  }
+
+  50% {
+    background-position: 78% 100%
+  }
+
+  100% {
+    background-position: 23% 0%
+  }
+}
+
+@-moz-keyframes GradientAnimation {
+  0% {
+    background-position: 23% 0%
+  }
+
+  50% {
+    background-position: 78% 100%
+  }
+
+  100% {
+    background-position: 23% 0%
+  }
+}
+
+@keyframes GradientAnimation {
+  0% {
+    background-position: 23% 0%
+  }
+
+  50% {
+    background-position: 78% 100%
+  }
+
+  100% {
+    background-position: 23% 0%
+  }
+}
