@@ -1,0 +1,19 @@
+{
+  attribution: true,
+  commercialUse: false,
+  commercialAttribution: false,
+  commercializerChecker: address(0),
+  commercializerCheckerData: EMPTY_BYTES, // ""
+  commercialRevShare: 0,
+  derivativesAllowed: true,
+  derivativesAttribution: true,
+  derivativesApproval: false,
+  derivativesReciprocal: true,
+  transferable: true,
+  royaltyPolicy: address(0),
+  mintingFee: 0,
+  mintingFeeToken: address(0),
+  territories: new string[](0),
+  distributionChannels: new string[](0),
+  contentRestrictions: new string[](0),
+}
